@@ -232,10 +232,10 @@ public class PlayerController : MonoBehaviour {
             {
                 anim.SetBool("ComboAttacking", true);
                 jumpAttacking = true;
-                jumpAttackForce = 11;
+                jumpAttackForce = 7;
                 float oldSpeed = speed;
                 speed = speed*.8f;
-                yield return new WaitForSeconds(0.8f);
+                yield return new WaitForSeconds(0.7f);
                 speed = oldSpeed;
                 frozen = true;
                 anim.SetBool("ComboAttacking", false);
